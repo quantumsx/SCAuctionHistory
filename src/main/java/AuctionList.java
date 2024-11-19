@@ -10,6 +10,8 @@ import java.util.List;
 public class AuctionList {
     private int total;
     private List<AuctionItem> prices;
+
+
     @AllArgsConstructor
     @NoArgsConstructor
     @Getter
@@ -31,6 +33,9 @@ public class AuctionList {
             private double stats_random;
             private double upgrade_bonus;
             private long spawn_time;
+            private String compens_2023_owner;
+            private int compens_2023_ptn;
+            private int dupsa;
         }
     }
 }

@@ -58,17 +58,24 @@
       <scope>provided</scope>
     </dependency>
 
-    <dependency>
-      <groupId>org.mongodb</groupId>
-      <artifactId>mongodb-driver-sync</artifactId>
-      <version>4.10.2</version>
-    </dependency>
-
     <!-- Зависимость SLF4J API -->
     <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
       <version>1.7.32</version> <!-- Укажите актуальную версию -->
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/net.dv8tion/JDA -->
+    <dependency>
+      <groupId>net.dv8tion</groupId>
+      <artifactId>JDA</artifactId>
+      <version>5.2.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>io.github.cdimascio</groupId>
+      <artifactId>dotenv-java</artifactId>
+      <version>3.0.0</version>
     </dependency>
 
     <!-- Зависимость Logback (реализация SLF4J) -->
@@ -79,4 +86,16 @@
     </dependency>
 
   </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>11</source>
+          <target>11</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>
